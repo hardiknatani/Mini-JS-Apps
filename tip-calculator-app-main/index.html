@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <script src="index.js"></script>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+
+<div id="errorMessage">
+
+</div>
+  <div class="main">
+
+    <div class="left">
+      <p>Bill</p>
+      <input type="text" id="bill">
+      <p>Select Tip %</p>
+      <div class="tipMain">
+        <button class="tip" id="five">5%</button>
+        <button class="tip"  id="ten">10%</button>
+        <button class="tip" id="fifteen"> 15%</button>
+        <button class="tip" id="twentyFive"> 25%</button>
+        <button class="tip" id="fifty"> 50%</button>
+        <input type="text" placeholder="Custom" name="" id="custom">
+
+
+      </div>
+
+     <p> Number of People</p>
+      <input type="text" name="" id="people">
+    </div>
+    <div class="right">
+
+<div class="right__main">
+  <div class="label"> Tip Amount
+    <span> / person</span></div>
+     <div id="tipPerPerson">
+      $0.00
+     </div>
+    <div class="label"> Total
+     <span>/ person</span></div>
+
+
+     <div id="totalPerPerson">
+      $0.00
+     </div>
+</div>
+
+      <button id="reset">Reset</button></div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hardik Natani</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

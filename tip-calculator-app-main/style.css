@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+}
+
+#errorMessage {
+  position: relative;
+  margin: auto;
+  top: 28vh;
+  color: #f54343;
+  font-size: 25px;
+  text-align: center;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 90vh;
+  height: 45vh;
+  margin-top: 30vh;
+  background-color: white;
+  padding: 2.5vh 0 2.5vh 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 15px;
+}
+
+.left {
+  width: 45%;
+  border-radius: 15px;
+}
+
+.left > input {
+  height: 3.5vh;
+  width: 100%;
+  border: none;
+  border-radius: 2.5px;
+  background-color: rgba(197, 228, 231, 0.4);
+  margin-top: none;
+}
+
+.left > p {
+  color: grey;
+  font-size: 12px;
+  margin-top: 2vh;
+  font-weight: 700;
+  margin-bottom: 1vh;
+}
+
+.right {
+  background-color: #00494d;
+  width: 45%;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.right .right__main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100% 100%;
+      grid-template-rows: 100% 100%;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  padding: 1vh 0 1vh 1vw;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.right .right__main > .label {
+  color: white;
+  font-size: 12px;
+}
+
+.right .right__main > .label > span {
+  color: #7f9c9f;
+  font-size: 8px;
+  display: block;
+}
+
+.right > button {
+  border: none;
+  border-radius: 2.5px;
+  color: black;
+  background-color: #26c0ab;
+  margin: auto;
+  width: 80%;
+  height: 4vh;
+  margin-bottom: 4vh;
+}
+
+.tipMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5vw;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tipMain > button, .tipMain input {
+  color: white;
+  width: 5.5vw;
+  height: 4vh;
+  background-color: #00494d;
+  gap: 2.5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 2.5px;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.tipMain > input {
+  text-indent: 1.25rem;
+  background-color: #c5e4e7;
+}
+
+.tipMain > button:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+#tipPerPerson, #totalPerPerson {
+  color: #26c0ab;
+  font-weight: 700;
+  text-align: right;
+  font-size: 150%;
+}
+
+#reset:hover {
+  background-color: #f4fafa;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #26c0ab;
+}
+
+.attribution {
+  position: relative;
+  margin: auto;
+  top: 17vh;
+}
+/*# sourceMappingURL=style.css.map */

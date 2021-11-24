@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: large;
+}
+
+body {
+  height: 100vh;
+  background-color: #373b69;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3vh;
+  background-color: #13688C;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  font-weight: 10px;
+}
+
+header > img {
+  border: none;
+  width: 10vw;
+}
+
+#search {
+  border-radius: 50px;
+  border: 1px solid #ebe5e2;
+  height: 4vh;
+  width: 15vw;
+  text-indent: 1rem;
+  background-color: transparent;
+  outline: none;
+  font-weight: bold;
+}
+
+#search::-webkit-input-placeholder {
+  color: #7378c5;
+}
+
+#search:-ms-input-placeholder {
+  color: #7378c5;
+}
+
+#search::-ms-input-placeholder {
+  color: #7378c5;
+}
+
+#search::placeholder {
+  color: #7378c5;
+}
+
+#search:focus {
+  background-color: #22254b;
+  outline: none;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  height: auto;
+  background-color: #13688c;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #373b69;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 1rem;
+  width: 300px;
+}
+
+.movie > img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.movieInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5vh;
+  color: #ebe5e2;
+  font-weight: bold;
+  position: relative;
+}
+
+.movieInfo > span {
+  font-weight: bolder;
+}
+
+.overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movie:hover .overview {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.red {
+  color: #bd2121;
+}
+
+.green {
+  color: #69d169;
+}
+/*# sourceMappingURL=style.css.map */

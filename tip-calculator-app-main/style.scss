@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap'); 
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    // height:100vh;
+}
+
+
+#errorMessage{
+    position: relative;
+    margin: auto;
+    top: 28vh;
+    color:#f54343;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.main{
+display: flex;
+margin:auto;
+width:90vh;
+height: 45vh;
+margin-top: 30vh;
+
+background-color: hsl(0,0,100%);
+padding: 2.5vh 0 2.5vh 0 ;
+
+justify-content: space-around;
+border-radius: 15px;
+}
+
+
+.left{
+
+ width:45%;
+ border-radius: 15px;
+ 
+
+ >input{
+     height:3.5vh;
+     width:100%;
+     border:none;
+     border-radius: 2.5px;
+     background-color: hsla(185, 41%, 84%,0.4);
+     margin-top: none;
+ }
+
+ 
+>p{
+    color:grey;
+    font-size:12px;
+    margin-top:2vh;
+    font-weight: 700;
+    margin-bottom: 1vh;
+}
+}
+
+.right{
+    
+background-color: hsl(183, 100%, 15%);
+width:45%;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+justify-content: stretch;
+
+
+
+.right__main{
+    display: grid;
+    grid-template-rows: 100% 100%;
+    grid-template-columns: 45% 45%;
+    padding: 1vh 0 1vh 1vw;
+    justify-content: stretch;
+    >.label{
+        color:hsl(0, 0%, 100%);
+        font-size:12px;
+    
+        >span{
+            color: hsl(184, 14%, 56%);
+            font-size:8px ;
+            display: block;
+        }
+        
+    }
+}
+
+
+>button{
+     border:none;
+     border-radius: 2.5px;
+    color:black;
+    background-color: hsl(172, 67%, 45%);
+    margin: auto;
+    width:80%;
+    height:4vh;
+    margin-bottom: 4vh;
+    
+}
+}
+
+.tipMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ gap:1.5vw;
+    text-align: center;
+    
+    align-items: center;
+    
+    >button,input{
+        color:white;
+        width:5.5vw;;
+        height:4vh;
+        background-color: hsl(183, 100%, 15%);
+        gap:2.5vw;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 2.5px;
+        font-weight: 700;
+        font-family: inherit;
+        
+    }
+}
+
+.tipMain>input{
+    text-indent:1.25rem;
+    background-color:hsl(185, 41%, 84%) ;
+}
+
+.tipMain>button:hover{
+    background-color:hsla(185, 41%, 84%,1.0);
+    color:hsl(183, 100%, 15%);
+}
+
+#tipPerPerson  ,#totalPerPerson{
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    text-align: right;
+    font-size: 150%;
+}
+
+
+#reset:hover{
+    background-color: hsl(189, 41%, 97%);
+    
+}
+
+
+input:focus{
+   	outline: none;
+    border: 1px solid hsl(172, 67%, 45%);
+
+}
+
+.attribution{
+    position: relative;
+    margin: auto;
+    top:17vh;
+}
+
+
+// - Very dark cyan: hsl(183, 100%, 15%)
+// - Dark grayish cyan: hsl(186, 14%, 43%)
+// - Dark grayish cyan: hsl(184, 14%, 56%)
+// - Light grayish cyan: 	hsl(185, 41%, 84%)
+// - Light grayish cyan: hsl(189, 41%, 97%)
+// - White: hsl(0, 0%, 100%)

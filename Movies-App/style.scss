@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: large;
+}
+
+body {
+  height: 100vh;
+  background-color: #373b69;
+}
+
+header {
+  display: flex;
+  height: 3vh;
+  background-color: #13688C;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  font-weight: 10px;
+  >img{
+      border:none;
+      width:10vw;
+  }
+}
+
+#search {
+  border-radius: 50px;
+  border: 1px solid #ebe5e2;
+  height: 4vh;
+  width: 15vw;
+  text-indent: 1rem;
+  background-color: transparent;
+  outline: none;
+  font-weight: bold;
+
+}
+
+
+#search::placeholder {
+    color: #7378c5;
+}
+  
+#search:focus {
+    background-color: #22254b;
+    outline: none;
+}
+
+
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  height: auto;
+  background-color: #13688c;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 1rem;
+  width: 300px;
+
+  > img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+.movieInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5vh;
+  color: #ebe5e2;
+  font-weight: bold;
+  position: relative;
+
+  > span {
+    font-weight: bolder;
+  }
+}
+
+.overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.red {
+  color: rgb(189, 33, 33);
+}
+
+.green {
+  color: rgb(105, 209, 105);
+}
